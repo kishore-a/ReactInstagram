@@ -1,5 +1,5 @@
 import React from 'react'
-import {View,Text,FlatList} from 'react-native';
+import {FlatList, ScrollView} from 'react-native';
 import Profilepicture from '../components/Profilepictures/index'
 import styles from './styles'
 const url=[{
@@ -44,17 +44,18 @@ const url=[{
 }];
 const HomeScreen = () => {
     return (
-      <View  style={styles.container}>
-       <FlatList
+      
+        <FlatList
        data={url}
-       keyExtractor={item=> item.id}
-       
+      
+ scrollEnabled={true}
+       horizontal={true}
+       style={{width:1000,height:300,flex:1,flexDirection:'row'}}
       renderItem={({item})=> <Profilepicture uri={item.uri} name={item.name}/>
       }
+      />
       
-       />
-      </View>
-    )
+     )
 }
 
 export default HomeScreen;

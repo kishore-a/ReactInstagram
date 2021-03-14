@@ -4,5 +4,7 @@
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://3w-iua.kishore-shankar20.reactinstagram.exp.direct",
   "packagerNgrokUrl": "https://packager.3w-iua.kishore-shankar20.reactinstagram.exp.direct",
-  "ngrokPid": 121873
+  "ngrokPid": 134736,
+  "packagerPid": null,
+  "webpackServerPort": null
 }
