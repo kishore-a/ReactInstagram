@@ -1,7 +1,8 @@
 import React from 'react'
-import {FlatList, ScrollView} from 'react-native';
+import {FlatList, View} from 'react-native';
 import Profilepicture from '../components/Profilepictures/index'
 import styles from './styles'
+import StoryPicture from '../components/storypicture/index'
 const url=[{
   uri:'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg',
   name:'Name1',
@@ -42,20 +43,17 @@ const url=[{
   id:'8'
 
 }];
-const HomeScreen = () => {
-    return (
-      
-        <FlatList
-       data={url}
-      
- scrollEnabled={true}
-       horizontal={true}
-       style={{width:1000,height:300,flex:1,flexDirection:'row'}}
-      renderItem={({item})=> <Profilepicture uri={item.uri} name={item.name}/>
-      }
-      />
-      
-     )
-}
 
-export default HomeScreen;
+
+export const HomeScreen = () => {
+  return (
+<FlatList
+data={url}
+horizontal
+showsHorizontalScrollIndicator={false}
+keyExtractor={(item) => item.name}
+renderItem={({item}) => <StoryPicture uri={item.uri} name={item.name}/>}
+/>
+  )
+}
+export default HomeScreen;r
