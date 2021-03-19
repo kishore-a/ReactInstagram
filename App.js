@@ -1,17 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { View ,SafeAreaView} from 'react-native';
-import HomeScreen from './src/screens/index'
+import React from "react";
+import { View, SafeAreaView } from "react-native";
+import Profilepicture from "./src/components/Profilepicture/index";
+import HomeScreen from "./src/screens/index";
 
 export default function App() {
   return (
     <SafeAreaView>
-       <View >
-      <HomeScreen/>
-      
-    </View>
+      <View>
+        <HomeScreen />
+      </View>
     </SafeAreaView>
-   
   );
 }
-
