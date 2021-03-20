@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   container: {
     // marginHorizontal: 10,
-    marginLeft:15,
+    marginLeft:10,
     borderRadius: 60,
     borderWidth: 3,
     borderColor: "violet",

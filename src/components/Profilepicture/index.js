@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, Text } from "react-native";
+import { View, Image, Text ,Dimensions} from "react-native";
 import styles from "./styles";
 
 const Profilepicture = ({
@@ -7,6 +7,7 @@ const Profilepicture = ({
   name,
   size = 70,
   marigin = 80,
+  marginBottom=30
   
 }) => {
   return (
@@ -17,7 +18,7 @@ const Profilepicture = ({
           width: size + 8.5,
           height: size + 8.5,
           marginTop: marigin-10,
-          marginBottom: marigin - 50,
+          marginBottom:marginBottom,
         },
       ]}
     >

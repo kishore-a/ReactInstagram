@@ -5,10 +5,10 @@ const styles = StyleSheet.create({
     
   },
   text: {
-  top: 20,
+  top: -10,
   marginLeft:5,
   fontWeight:'bold',
-  fontSize:16
+  fontSize:15
   },
 });
 export default styles;
