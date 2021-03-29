@@ -7,7 +7,8 @@ const Profilepicture = ({
   name,
   size = 70,
   marigin = 80,
-  marginBottom=30
+  marginBottom=30,
+  border=true,
   
 }) => {
   return (
@@ -15,10 +16,13 @@ const Profilepicture = ({
       style={[
         styles.container,
         {
-          width: size + 8.5,
+          
+            width: size + 8.5,
           height: size + 8.5,
           marginTop: marigin-10,
           marginBottom:marginBottom,
+          
+          
         },
       ]}
     >

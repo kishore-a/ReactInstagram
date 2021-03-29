@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19000,
+  "expoServerPort": 19005,
+  "packagerPort": 19005,
   "expoServerNgrokUrl": "https://s6-iuc.kishore-shankar20.reactinstagram.exp.direct",
   "packagerNgrokUrl": "https://packager.s6-iuc.kishore-shankar20.reactinstagram.exp.direct",
-  "ngrokPid": 131073,
+  "ngrokPid": 6208,
   "packagerPid": null,
   "webpackServerPort": null
 }
