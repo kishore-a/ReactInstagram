@@ -55,7 +55,7 @@ const Feed = () => {
     <FlatList
       contentContainerStyle='styles'
       snapToAlignment="center"
-      snapToInterval={Dimensions.get('window').width}
+      // snapToInterval={Dimensions.get('window').width}
       data={user}
       key={user.id}
       ListHeaderComponent={StoryPicture}
