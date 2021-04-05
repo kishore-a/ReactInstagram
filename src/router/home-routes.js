@@ -2,6 +2,7 @@ import HomeScreen from '../screens/HomeScreen/index'
 import { createStackNavigator } from "@react-navigation/stack";
 import IonIcons from "react-native-vector-icons/Ionicons";
 import React from "react";
+import StoryScreen from '../screens/Story/index'
 import {Text} from "react-native";
 const HomeStack = createStackNavigator();
 
@@ -25,6 +26,9 @@ const Homescreenstack=()=> {
             ),
           }}
         />
+        <HomeStack.Screen name='Story' component={StoryScreen} options={{
+          headerShown:false
+        }}/>
       </HomeStack.Navigator>
     );
   }

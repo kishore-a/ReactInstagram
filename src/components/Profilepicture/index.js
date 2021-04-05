@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Image, Text, Dimensions } from "react-native";
+import { View, Image, Text, Dimensions, TouchableOpacity } from "react-native";
 import styles from "./styles";
-
+import {useNavigation} from '@react-navigation/native';
 const Profilepicture = ({
   uri,
   name,
@@ -9,7 +9,11 @@ const Profilepicture = ({
   marigin = 20,
   marginBottom = 30,
   border = true,
+
 }) => {
+  const navigation=useNavigation();
+
+
   return (
     <View
       style={[
@@ -22,10 +26,15 @@ const Profilepicture = ({
         },
       ]}
     >
-      <Image
-        source={{ uri: uri }}
-        style={[styles.image, { width: size, height: size }]}
-      />
+      <TouchableOpacity onPress={()=>{
+        navigation.navigate('Story')
+      }}>
+        <Image
+          source={{ uri: uri }}
+          style={[styles.image, { width: size, height: size }]}
+        />
+      </TouchableOpacity>
+
       <Text style={[styles.text]}>{name}</Text>
     </View>
   );
